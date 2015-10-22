@@ -13,12 +13,12 @@ class RandomNumberGenerator: NSObject {
     var max:UInt
     var min:UInt
     
-    init(max:UInt, min:UInt){
+    init(min:UInt, max:UInt){
         self.max = max
         self.min = min
     }
     
-    func randomNumber() -> UInt{
+    func getRandomNumber() -> UInt{
         let span = max - min + 1
         let result = min + UInt(arc4random()) % span
         return result

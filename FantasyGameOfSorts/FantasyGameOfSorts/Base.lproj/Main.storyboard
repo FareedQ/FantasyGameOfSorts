@@ -9,40 +9,41 @@
             <objects>
                 <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="FantasyGameOfSorts" customModuleProvider="target" sceneMemberID="viewController">
                     <layoutGuides>
-                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
-                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                        <viewControllerLayoutGuide type="top" id="mtf-3G-Il8"/>
+                        <viewControllerLayoutGuide type="bottom" id="WIN-lZ-EiK"/>
                     </layoutGuides>
                     <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
                         <rect key="frame" x="0.0" y="0.0" width="414" height="736"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="..." textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sxF-L2-0KB">
-                                <rect key="frame" x="42" y="127" width="331" height="33"/>
+                            <imageView userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" image="Character1.jpg" translatesAutoresizingMaskIntoConstraints="NO" id="FBP-RC-eKI">
+                                <rect key="frame" x="87" y="121" width="240" height="128"/>
                                 <animations/>
-                                <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
-                                <nil key="highlightedColor"/>
-                            </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="7Sk-6q-wm4">
-                                <rect key="frame" x="162" y="351" width="90" height="33"/>
+                            </imageView>
+                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Lym-m7-5zG">
+                                <rect key="frame" x="172" y="467" width="71" height="30"/>
                                 <animations/>
-                                <state key="normal" title="click here"/>
+                                <state key="normal" title="Click Here"/>
                                 <connections>
-                                    <action selector="myButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="bJN-eP-rJj"/>
+                                    <action selector="myButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="MEO-iy-cFw"/>
                                 </connections>
                             </button>
                         </subviews>
                         <animations/>
                         <color key="backgroundColor" red="0.72628045080000003" green="0.72629773620000004" blue="0.72628843779999996" alpha="1" colorSpace="deviceRGB"/>
                     </view>
+                    <navigationItem key="navigationItem" id="XWp-pZ-Dab"/>
                     <simulatedScreenMetrics key="simulatedDestinationMetrics" type="retina55"/>
                     <connections>
-                        <outlet property="myLabel" destination="sxF-L2-0KB" id="Oa5-ta-JZX"/>
+                        <outlet property="myImage" destination="FBP-RC-eKI" id="7I0-fh-y46"/>
                     </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="305" y="418"/>
+            <point key="canvasLocation" x="-107" y="140"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="Character1.jpg" width="60" height="110"/>
+    </resources>
 </document>

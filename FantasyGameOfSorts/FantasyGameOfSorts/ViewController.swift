@@ -10,15 +10,6 @@ import UIKit
 
 class ViewController: UIViewController {
     
-    @IBAction func myButton(sender: AnyObject) {
-        let SixSidedDice = RandomNumberGenerator(max: 6, min: 1)
-        myLabel.text = String(SixSidedDice.randomNumber())
-    }
-    
-    @IBOutlet weak var myLabel: UILabel!
-    
-    @IBOutlet weak var myButton: UIButton!
-    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
@@ -28,5 +19,10 @@ class ViewController: UIViewController {
         // Dispose of any resources that can be recreated.
     }
 
+    @IBAction func myButton(sender: AnyObject) {
+        let randomNumber = RandomNumberGenerator(min: 1, max: 12)
+        myImage.image = UIImage(named:"Character\(randomNumber.getRandomNumber()).jpg")
+    }
 
+    @IBOutlet weak var myImage: UIImageView!
 }
